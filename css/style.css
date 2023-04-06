@@ -38,10 +38,15 @@
 
 body {
 	background-color: var(--clr-light);
-	color: var(--clr-light);
+	color: var(--clr-dark);
 	margin: 0;
+	font-family: var(--ff-primary);
 	font-size: var(--fs-body);
 	line-height: 1.6; /* my go to line height*/
+}
+
+section {
+	padding: 5em 2em;
 }
 
 img {
@@ -49,11 +54,15 @@ img {
 	max-width: 100%;
 }
 
+strong {
+	font-weight: var(--fw-bold);
+}
+
 /* Typography */
 h1,
 h2,
 h3 {
-	line-height: 1.1; /* give a smaller line-height bcz they're headings*/
+	line-height: 1; /* give a smaller line-height bcz they're headings*/
 	margin: 0; /* usually want to reset margin-top */
 }
 
@@ -68,6 +77,15 @@ h3 {
 }
 
 .section__title {
+	margin-bottom: 0.25em; /* Do margin and padding of text in em. bcz it's relative to the font-sizes*/
+}
+
+.section__title--intro {
+	font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong {
+	display: block;
 }
 
 .section__subtitle {
@@ -78,5 +96,54 @@ h3 {
 .section__subtitle--intro,
 .section__subtitle--about {
 	background: var(--clr-accent);
+	padding: 0.25em 1em;
 	font-family: var(--ff-secondary);
+	margin-bottom: 1em;
+
+}
+
+/* header */
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav {
+	display: none;
+}
+
+/* Intro section */
+
+.intro {
+	position: relative;
+}
+
+@media (min-width: 600px) {
+	.intro {
+		display: grid;
+		width: min-content;
+		margin: 0 auto;
+		grid-column-gap: 1em;
+		grid-template-areas:
+			"img title"
+			"img subtitle";
+		grid-template-columns: min-content max-content;
+	} 
+
+	.intro__img{
+		grid-area: img;
+		min-width: 250px;
+	}
+
+	.section__subtitle--intro {
+		align-self: flex-start;
+		grid-column: -1 / 1;
+		grid-row: 2;
+		text-align: right;
+
+		position: relative;
+		left: -1.5em;
+		width: calc(100% + 1.5em);
+
+	}
 }
