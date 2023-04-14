@@ -1,0 +1,3 @@
+- In project section, different image height sizes are screwing up the layout.
+   - either fix height (object-fit) or masonary layout
+   
