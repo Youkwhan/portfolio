@@ -40,10 +40,13 @@
 						<a href="#services" class="nav__link">My Services</a>
 					</li>
 					<li class="nav__item">
-						<a href="#about" class="nav__link">About me</a>
+						<a href="#about" class="nav__link">About Me</a>
 					</li>
 					<li class="nav__item">
 						<a href="#work" class="nav__link">My Work</a>
+					</li>
+					<li class="nav__item">
+						<a href="#contact-me" class="nav__link">Contact Me</a>
 					</li>
 				</ul>
 			</nav>
@@ -117,14 +120,14 @@
 				</p>
 				<!-- read more -->
 				<p class="about-me__body--read-more">
-					My journey as a programmer began during my freshman
-					year of college when I learned Python and Pygame to create mini-games
-					to play with my friends. Since then, I have continued to expand my
-					problem-solving skills and practice object-oriented programming
-					through coding challenges. It wasn't until the end of my senior year
-					when I enrolled in an accelerated bootcamp called Headstarter that I
-					realized my passion for web development, where I found the perfect
-					blend of practicality and visual creativity.
+					My journey as a programmer began during my freshman year of college
+					when I learned Python and Pygame to create mini-games to play with my
+					friends. Since then, I have continued to expand my problem-solving
+					skills and practice object-oriented programming through coding
+					challenges. It wasn't until the end of my senior year when I enrolled
+					in an accelerated bootcamp called Headstarter that I realized my
+					passion for web development, where I found the perfect blend of
+					practicality and visual creativity.
 
 					<br />
 					So, I took the time to reinforce the material I had learned by
@@ -141,8 +144,35 @@
 					better society. I look forward to meeting you and learning how we can
 					build new solutions together.
 				</p>
-				<button id="read-more" class="btn read-more-btn"><span>Read More</span></button>
+
+				<div class="about-me__body--skills">
+					<div class="skills-section">
+						<h3>Skills</h3>
+						<div class="skills">
+						  <div class="skill language"><p>JavaScript</p></div>
+						  <div class="skill language"><p>Python</p></div>
+						  <div class="skill language"><p>HTML5</p></div>
+						  <div class="skill language"><p>CSS3</p></div>
+						  <div class="skill library-framework"><p>React</p></div>
+						  <div class="skill other"><p>Git</p></div>
+						  <div class="skill other"><p>GitHub</p></div>
+						</div>
+					 </div>
+				</div>
+				
+				<div class="about-me__body--buttons">
+					<button id="read-more" class="btn read-more-btn">
+						<span>Read More</span>
+					</button>
+					<a href="/docs/cv.txt" target="_blank"
+						><button class="btn read-more-btn">Download CV</button></a
+					>
+					<a href="#contact-me"
+						><button class="btn read-more-btn">Contact Me</button></a
+					>
+				</div>
 			</div>
+			
 			<img
 				src="./images/mylogo.png"
 				alt="picture of me"
@@ -166,16 +196,17 @@
 						class="portfolio__img"
 					/>
 				</a>
-			
 			</div>
 		</section>
 
 		<!-- footer -->
-		<footer class="footer">
-			<a href="mailto:Youkwhan@gmail.com" class="footer-link"
-				>Youkwhan@gmail.com</a
-			>
+		<footer class="footer" id="contact-me">
 			<ul class="social-list">
+				<li class="social-list__item">
+					<a class="social-list__link" href="mailto:Youkwhan@gmail.com">
+						<i class="fa fa-envelope"></i>
+					</a>
+				</li>
 				<li class="social-list__item">
 					<a class="social-list__link" href="https://linkedin.com">
 						<i class="fab fa-linkedin"></i>
