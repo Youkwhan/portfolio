@@ -12,7 +12,8 @@
 	--ff-primary: "Source Sans Pro", sans-serif;
 	--ff-secondary: "Source Code Pro", monospace;
 
-	--fw-reg: 300;
+	--fw-light: 300;
+	--fw-reg: 400;
 	--fw-bold: 900;
 
 	--clr-light: #fff;
@@ -91,6 +92,10 @@ strong {
 	transform: scale(1.1);
 }
 
+.hidden {
+	display: none;
+}
+
 /* Typography */
 h1,
 h2,
@@ -114,7 +119,7 @@ h3 {
 }
 
 .section__title--intro {
-	font-weight: var(--fw-reg);
+	font-weight: var(--fw-light);
 }
 
 .section__title--intro strong {
@@ -138,6 +143,10 @@ h3 {
 	color: var(--clr-accent);
 	font-weight: var(--fw-bold);
 	margin-bottom: 2em;
+}
+
+.about-me__body {
+	font-weight: var(--fw-reg);
 }
 
 /* header */
@@ -332,6 +341,10 @@ header {
 		margin-right: auto;
 	}
 
+	.service {
+		flex-basis: 100%;
+	}
+
 	.service + .service {
 		margin-left: 2em;
 	}
@@ -409,7 +422,7 @@ header {
 }
 
 .portfolio__img:hover,
-.portfolio__item:focus .portfolio__img{
+.portfolio__item:focus .portfolio__img {
 	transform: scale(1.2);
 	opacity: 0.75;
 }
