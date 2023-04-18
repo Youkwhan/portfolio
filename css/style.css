@@ -72,28 +72,69 @@ strong {
 	outline-offset: 3px;
 }
 
+.hidden {
+	display: none;
+}
+
 /* Buttons */
 
 .btn {
 	display: inline-block;
 	padding: 0.5em 2.5em;
-	background: var(--clr-accent);
-	color: var(--clr-dark);
-	text-decoration: none;
 	cursor: pointer;
 	font-size: 0.8rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: var(--fw-bold);
+}
+
+.work-btn {
+	background: var(--clr-accent);
+	text-decoration: none;
+	color: var(--clr-dark);
 	transition: transform 200ms ease-in-out;
 }
 
-.btn:hover {
+.work-btn:hover {
 	transform: scale(1.1);
 }
 
-.hidden {
-	display: none;
+.read-more-btn {
+	position: relative;
+	border: none;
+	background: var(--clr-dark);
+	transition: all 0.3s ease;
+	color: var(--clr-light);
+	line-height: 2em;
+}
+
+.read-more-btn:hover {
+	background: transparent;
+	color: #000;
+	box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+		7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+}
+.read-more-btn:before,
+.read-more-btn:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #000;
+	transition: 400ms ease all;
+}
+.read-more-btn:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+.read-more-btn:hover:before,
+.read-more-btn:hover:after {
+	width: 100%;
+	transition: 800ms ease all;
 }
 
 /* Typography */
