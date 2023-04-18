@@ -72,10 +72,6 @@ strong {
 	outline-offset: 3px;
 }
 
-.hidden {
-	display: none;
-}
-
 /* Buttons */
 
 .btn {
@@ -432,6 +428,14 @@ header {
 		position: relative;
 		z-index: 2;
 	}
+}
+
+/* about-me hidden */
+.about-me__body--read-more {
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	transition: opacity 500ms ease, max-height 500ms ease;
 }
 
 /* My work section */
