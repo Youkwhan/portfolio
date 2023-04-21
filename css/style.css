@@ -19,6 +19,7 @@
 	--clr-light: #fff;
 	--clr-dark: #303030;
 	--clr-accent: #16e0bd;
+	--clr-bg: #F9F6EE;
 
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
@@ -45,7 +46,7 @@ html {
 }
 
 body {
-	background-color: var(--clr-light);
+	background-color: var(--clr-bg);
 	color: var(--clr-dark);
 	margin: 0;
 	font-family: var(--ff-primary);
@@ -142,11 +143,11 @@ strong {
 		7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 	outline: none;
 
-	background: rgb(96, 9, 240);
+	background: rgb(78, 172, 133);
 	background: linear-gradient(
 		0deg,
-		rgba(96, 9, 240, 1) 0%,
-		rgba(129, 5, 240, 1) 100%
+		rgb(78, 172, 133) 0%,
+		rgb(22,224,189) 100%
 	);
 	border: none;
 	color: var(--clr-light);
@@ -216,6 +217,10 @@ h3 {
 
 .about-me__body {
 	font-weight: var(--fw-reg);
+}
+
+.portfolio-item-individual p {
+	font-size: var(--fs-h3);
 }
 
 /* header */
@@ -608,9 +613,14 @@ header {
 }
 
 .portfolio-item-individual p {
-	max-width: 600px;
+	max-width: 70ch;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.portfolio-item-individual img{
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+	border-radius: 0.8rem;
 }
 
 .portfolio-item--button{
