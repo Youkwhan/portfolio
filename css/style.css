@@ -19,7 +19,7 @@
 	--clr-light: #fff;
 	--clr-dark: #303030;
 	--clr-accent: #16e0bd;
-	--clr-bg: #F9F6EE;
+	--clr-bg: #f9f6ee;
 
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
@@ -147,7 +147,7 @@ strong {
 	background: linear-gradient(
 		0deg,
 		rgb(78, 172, 133) 0%,
-		rgb(22,224,189) 100%
+		rgb(22, 224, 189) 100%
 	);
 	border: none;
 	color: var(--clr-light);
@@ -157,14 +157,13 @@ strong {
 .portfolio-item-btn:before {
 	height: 0%;
 	width: 2px;
- }
- .portfolio-item-btn:hover {
-	box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-					-4px -4px 6px 0 rgba(116, 125, 136, .5), 
-	  inset -4px -4px 6px 0 rgba(255,255,255,.2),
-	  inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
- }
- 
+}
+.portfolio-item-btn:hover {
+	box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+		-4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+		inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+		inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
 
 /* Typography */
 h1,
@@ -182,6 +181,22 @@ h2 {
 }
 h3 {
 	font-size: var(--fs-h3);
+}
+
+.logo__title {
+	font-family: var(--ff-secondary);
+	color: var(--clr-dark);
+	text-decoration: none;
+}
+
+.logo__title h3 {
+	border-top: 3px solid var(--clr-dark);
+	border-bottom: 3px solid var(--clr-dark);
+	transition: transform 500ms ease;
+}
+
+.logo__title h3:is(:hover, :focus) {
+	transform: scale(1.1);
 }
 
 .section__title {
@@ -618,14 +633,13 @@ header {
 	margin-right: auto;
 }
 
-.portfolio-item-individual img{
+.portfolio-item-individual img {
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 	border-radius: 0.8rem;
 }
 
-.portfolio-item--button{
+.portfolio-item--button {
 	width: 90%;
 	margin: 40px auto;
 	text-align: center;
-	
 }
