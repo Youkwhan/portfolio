@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DevYouk Portfolio Website</title>
+		<!-- css  normalize -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+		/>
+		<!-- font awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+			integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+			crossorigin="anonymous"
+		/>
+		<!-- google font SourceSan -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<!-- header/nav section -->
+		<header>
+			<div class="logo">
+				<a href="index.html" class="logo__title"><h3>DevYouk</h3></a>
+			</div>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="index.html" class="nav__link">Home</a>
+					</li>
+					<li class="nav__item">
+						<a href="index.html#services" class="nav__link">My Services</a>
+					</li>
+					<li class="nav__item">
+						<a href="index.html#about" class="nav__link">About me</a>
+					</li>
+					<li class="nav__item">
+						<a href="index.html#work" class="nav__link">My Work</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- intro section -->
+		<section class="intro">
+			<h1 class="section__title section__title--intro">
+				Notes<strong> App</strong>
+			</h1>
+			<p class="section__subtitle section__subtitle--intro">📝📝</p>
+			<img
+				src="./images/notes-app-markdown.png"
+				alt="project4"
+				class="intro__img"
+			/>
+		</section>
+
+		<div class="portfolio-item-individual">
+			<p>
+				The Notes App is a web application built using React. It aims to provide
+				users with a convenient and feature-rich markdown editor for creating
+				and organizing their notes. The app allows users to write and format
+				their notes using markdown syntax and provides a live preview of the
+				rendered content.
+			</p>
+			<p>
+				This app has been designed to provide a simple yet powerful experience,
+				with a focus on feature parity with the Github Markdown editor.
+			</p>
+			<div class="skills-section">
+				<div class="skills">
+					<div class="skill language"><p>JavaScript</p></div>
+					<div class="skill language"><p>HTML</p></div>
+					<div class="skill language"><p>CSS</p></div>
+					<div class="skill library-framework"><p>React.js</p></div>
+					<div class="skill database"><p>Firebase</p></div>
+				</div>
+			</div>
+			<div class="portfolio-item--button">
+				<a href="https://meek-malabi-f59af4.netlify.app/" target="_blank"
+					><button class="btn portfolio-item-btn">Live Preview</button></a
+				>
+				<a href="https://github.com/Youkwhan/notes-app" target="_blank">
+					<button class="btn portfolio-item-btn">Github Repo</button></a
+				>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer class="footer" id="contact-me">
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a class="social-list__link" href="mailto:Youkwhan@gmail.com">
+						<i class="fa fa-envelope"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://linkedin.com">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://github.com">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script src="index.js"></script>
+	</body>
+</html>

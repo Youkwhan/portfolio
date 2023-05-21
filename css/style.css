@@ -569,11 +569,14 @@ header {
 	display: grid;
 	/* grid-template-columns: repeat(3, 1fr); */
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap:1em;
 }
 
 .portfolio__item {
 	background-color: var(--clr-accent);
 	overflow: hidden;
+	border-radius: 6px;
+	border: 1px solid #fff;
 }
 
 .portfolio__img {
